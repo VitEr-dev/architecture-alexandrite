@@ -15,3 +15,6 @@
 
 
 /Task5/solution5.txt - результат выполнения Задания 5. «Архитектурное решение по кешированию»
+
+
+Схема предлагаемых решений в файле: https://drive.google.com/file/d/1bitj0PqJd1ZFeItkQX7UHyjYW2wZg_pL/view?usp=sharing
