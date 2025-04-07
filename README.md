@@ -1,6 +1,7 @@
 # architecture-alexandrite
 
-Проект №4
+Проект №4 Архитектура Александрит
+
 
 /Task1/solution1.txt - результат выполнения Задания 1. «Анализ, идентификация проблем и решений, планирование»
 
@@ -17,4 +18,4 @@
 /Task5/solution5.txt - результат выполнения Задания 5. «Архитектурное решение по кешированию»
 
 
-Схема предлагаемых решений в файле: https://drive.google.com/file/d/1bitj0PqJd1ZFeItkQX7UHyjYW2wZg_pL/view?usp=sharing
+Доработанная диаграмма С4 и диаграмма последовательности действий представлены в файле: https://drive.google.com/file/d/1bitj0PqJd1ZFeItkQX7UHyjYW2wZg_pL/view?usp=sharing
