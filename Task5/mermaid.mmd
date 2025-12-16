@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant Browser
+    participant Frontend as Frontend(React/TS)
+    participant Backend as Backend(C#)
+    participant Redis
+    participant PostgreSQL
+
+    Browser->>Frontend: Изменение статуса заказа {order_id}
+    Frontend->>Backend: PATCH /api/orders/{order_id} (status=shipped)
+    Backend->>PostgreSQL: UPDATE orders SET status='shipped' WHERE order_id={order_id}
+    PostgreSQL-->>Backend: Подтверждение
+    Backend->>Redis: Удалить order:{order_id} и orders:list
+    Redis-->>Backend: Подтверждение
+    Backend-->>Frontend: 200 OK
+    Frontend->>Browser: Инвалидирует локальный кеш для /api/orders*
+    Browser-->>Frontend: Запрашивает актуальные данные
